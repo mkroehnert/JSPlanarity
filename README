@@ -1,0 +1,52 @@
+ABOUT
+-----
+
+JSPlanarity is project which aims to implement the excellent Planarity game
+(http://www.planarity.net/) completely in JavaScript using the Raphael graphics
+library (http://raphaeljs.com/).
+
+
+FEATURES
+--------
+
+- Create graph and move vertices
+
+
+REQUIREMENTS
+------------
+
+Any modern browser which runs JavaScript and is supported by the Raphael JS library.
+
+
+LICENSE
+-------
+
+JSPlanarity is licensed under GPLv3 or later (see LICENSE.txt).
+Raphael is licensed under the MIT license.
+
+
+DOWNLOADING
+-----------
+
+JSPlanarity can be downloaded from its Github page:
+
+http://github.com/mkroehnert/JSPlanarity
+
+
+INSTALLATION
+------------
+
+There are three possible ways to run JSPlanarity:
+
+1. Put the downloaded files in a directory and open the index.html file.
+2. Put the files on a webserver and access the index html file over the internet.
+3. Just use the js files in the lib directory and embed the Application like in
+    the provided index.html.
+
+
+PROBLEMS
+--------
+
+Feature requests and bugs can be reported on the Github issue page:
+
+http://github.com/mkroehnert/JSPlanarity/issues
