@@ -40,8 +40,11 @@ There are three possible ways to run JSPlanarity:
 
 1. Put the downloaded files in a directory and open the index.html file.
 2. Put the files on a webserver and access the index html file over the internet.
-3. Just use the js files in the lib directory and embed the Application like in
-    the provided index.html.
+3. Just use the js files in the lib directory and embed the Application by adding
+     two script tags for loading raphael.js and JSPlanarity.js.
+     One div tag with an id (e.g. "JSPlanarityDiv").
+     Initialise JSPlanarity through the body onload mechanism:
+       <body onload="JSPlanarity.init('JSPlanarityDiv')> ... </body>
 
 
 PROBLEMS
