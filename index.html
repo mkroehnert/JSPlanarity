@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <title>mkroehnert/JSPlanarity @ GitHub</title>
+
+  <style type="text/css">
+    body {
+      margin-top: 1.0em;
+      background-color: #7cd0a7;
+      font-family: "Helvetica,Arial,FreeSans";
+      color: #000000;
+    }
+    #container {
+      width: 885px;
+      margin: 0 auto;
+    }
+    #header {
+      width: 100%;
+      height: auto;
+      top: 0;
+      right: 0;
+      bottom: auto;
+      left: 0;
+    }
+    #sidebar {
+      float: right;
+      width: 185px;
+      height: auto;
+      top: auto;
+      right: 0;
+      left: auto;
+    }
+    #content {
+      float: left;
+      width: 650px;
+      height: auto;
+      top: auto;
+      right: auto;
+      left: 0;
+    }
+    #footer {
+      clear: both;
+      width: 100%;
+      height: auto;
+      top: auto;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+      padding-top: 30px;
+      font-style: italic;
+    }
+    h1 { font-size: 3.8em; color: #832f58; margin-bottom: 3px; }
+    h1 .small { font-size: 0.4em; }
+    h1 a { text-decoration: none }
+    h2 { font-size: 1.5em; color: #832f58; }
+    h3 { text-align: center; color: #832f58; }
+    a { color: #832f58; }
+    pre { background: #000; color: #fff; padding: 15px;}
+    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    p { width: 650; }
+    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+    .download { float: right; }
+  </style>
+
+  <script language="JavaScript" data-main="JSPlanarityMain" src="lib/require.js" type="text/javascript">
+  </script>
+
+</head>
+
+<body onload="JSPlanarity.init('PlanarityCanvas')">
+  <a href="http://github.com/mkroehnert/JSPlanarity"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+
+  <div id="container">
+    <div id="header">
+      <h1><a href="http://github.com/mkroehnert/JSPlanarity">JSPlanarity</a>
+        <span class="small">by <a href="http://github.com/mkroehnert">mkroehnert</a></span></h1>
+
+        <div class="description">
+          JSPlanarity aims to implement the excellent <a href="http://www.planarity.net">Planarity</a> game in JavaScript.<br/>
+          <a href="http://www.planarity.net">Planarity</a> was originally written by <a href="http://johntantalo.com/">John Tantalo</a> using Flash.
+        </div>
+    <!-- header --></div>
+
+    <div id="content">
+      <h2>How to Play</h2>
+        <p>
+          The idea behind this game is to untangle the shown
+          <a href="http://en.wikipedia.org/wiki/Graph_%28mathematics%29">graph</a>
+          into a <a href="http://en.wikipedia.org/wiki/Planar_graph">planar graph</a>
+          which means that no two lines are intersecting.
+        </p>
+        <p>
+          To achieve this drag the nodes around and once you think you are finished
+          press the button 'Check Solution!'.
+          Upon success you will advance to the next and more difficult stage.
+          Otherwise you are shown how many intersections need to be cleared
+          before advancing to the next stage is possible.
+        </p>
+        
+        <button id="CheckIntersection" onclick="JSPlanarity.checkSolution()">Check Solution!</button>
+        <div id="PlanarityArea" style="background:#888899"></div>
+
+      <h2>Developing</h2>
+        <p>You can clone the project with <a href="http://git-scm.com">Git</a>
+          by running:
+          <pre>$ git clone git://github.com/mkroehnert/JSPlanarity</pre>
+        </p>
+        <p>
+          or browse the source code on GitHub : <a href="http://github.com/mkroehnert/JSPlanarity">mkroehnert/JSPlanarity</a>
+        </p>
+    <!-- content --></div>
+
+    <div id="sidebar">
+      <h2>Download</h2>
+        <a href="http://github.com/mkroehnert/JSPlanarity/zipball/master">
+          <img border="0" width="90" src="http://github.com/images/modules/download/zip.png" /></a>
+        <a href="http://github.com/mkroehnert/JSPlanarity/tarball/master">
+          <img border="0" width="90" src="http://github.com/images/modules/download/tar.png" /></a>
+
+      <h2>Dependencies</h2>
+        <p><a href="http://raphaeljs.com">RaphaelJS</a> (a copy is included in the download)</p>
+
+      <h2>License</h2>
+        <p>JSPlanarity: <a href="http://www.gnu.org/licenses/gpl-3.0.html">GPLv3</a> </p>
+        <p><a href="http://raphaeljs.com">RaphaelJS</a>: <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> </p>
+
+      <h2>Authors</h2>
+        <p><a href="http://github.com/mkroehnert/">mkroehnert</a></p>
+      <h2><a href="http://promotejs.com/">PromoteJS</a></h2>
+        <a href='https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array' title='JavaScript Array Class'><img src='http://static.jsconf.us/promotejsv.gif' height='280' width='160' alt='JavaScript String toUpperCase'/></a>
+    <!-- sidebar --></div>
+  <!-- container --></div>
+
+  <div id="footer">
+    Contact: <a href="mailto:mkroehnert@users.sourceforge.net">mkroehnert</a>
+  <!-- footer --></div>
+</body>
+</html>
