@@ -10,6 +10,13 @@ FEATURES
 --------
 
 - Create graph and move vertices
+- Highlight connected vertices and edges upon drag
+- New graphs are animated upon creation
+- Line intersection checker which highlights crossing lines
+- Uses localStorage to store progress throughout different browser sessions
+- Display current level number
+- Reset functionality
+- Jump to level functionality
 
 
 REQUIREMENTS
