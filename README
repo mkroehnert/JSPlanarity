@@ -15,7 +15,7 @@ FEATURES
 REQUIREMENTS
 ------------
 
-Any modern browser which runs JavaScript and is supported by the Raphael JS library.
+Any modern browser supported by the RaphaelJS library.
 
 
 LICENSE
@@ -38,13 +38,17 @@ INSTALLATION
 
 There are three possible ways to run JSPlanarity:
 
-1. Put the downloaded files in a directory and open the index.html file.
-2. Put the files on a webserver and access the index html file over the internet.
-3. Just use the js files in the lib directory and embed the Application by adding
-     two script tags for loading raphael.js and JSPlanarity.js.
-     One div tag with an id (e.g. "JSPlanarityDiv").
-     Initialise JSPlanarity through the body onload mechanism:
-       <body onload="JSPlanarity.init('JSPlanarityDiv')> ... </body>
+1. Put the downloaded files in a directory and open the index.html or test.html file.
+2. Put the files on a webserver and access the index.html file over the internet.
+3. Just use the js files in the lib directory and embed JSPlanarity into your
+     webpage by including the following <script> tag in the <head> of the html
+     document:
+        <script language="JavaScript" data-main="JSPlanarityMain" src="lib/require.js" type="text/javascript">
+        </script>
+
+     Additionally create a <div> tag with an id which is found after the
+     drawingDivName option in the file DefaultOptions.js. The name of this
+     <div> can be changed at will.
 
 
 PROBLEMS
