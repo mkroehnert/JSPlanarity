@@ -1,0 +1,21 @@
+CACHE MANIFEST
+ 
+# Offline cache v0.1
+# html files
+index.html
+test.html
+ 
+# js files
+lib/DefaultOptions.js
+lib/EdgeFactory.js
+lib/GraphGenerator.js
+lib/icons.js
+lib/JSPlanarity.js
+lib/JSPlanarityMain.js
+lib/OfflineCache.js
+lib/Options.js
+lib/raphael.js
+lib/RaphaelCanvas.js
+lib/require.js
+lib/Utilities.js
+lib/VertexFactory.js
